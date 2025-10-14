@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.factoryventilations.com/?sitemapindex.xml
+Sitemap: https://www.factoryventilations.com/?sitemap981.xml
+Sitemap: https://www.factoryventilations.com/?sitemap206.xml
+Sitemap: https://www.factoryventilations.com/?sitemap876.xml
+Sitemap: https://www.factoryventilations.com/?sitemap83.xml
+Sitemap: https://www.factoryventilations.com/?sitemap459.xml
+Sitemap: https://www.factoryventilations.com/search.php?sitemap953.xml
+Sitemap: https://www.factoryventilations.com/policy/pages.php?sitemap226.xml

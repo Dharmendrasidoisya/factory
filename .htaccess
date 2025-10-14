@@ -1,0 +1,42 @@
+RewriteEngine  on
+
+RewriteCond %{HTTP_HOST} !^www\. [NC] 
+RewriteRule ^ https://www.factoryventilations.com%{REQUEST_URI} [R=301,L,NE]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*index(\.[a-z0-9]+)?[^\ ]*\ HTTP/
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(([^/]+/)*)index(\.[a-z0-9]+)?$ https://www.factoryventilations.com/$1? [R=301,L]
+
+ErrorDocument 404 https://www.factoryventilations.com/
+
+ErrorDocument 403 https://www.factoryventilations.com/
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+ 
+    # Cache images for 1 year
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+ 
+    # Cache CSS and JavaScript for 1 month
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+ 
+    # Cache fonts for 1 month
+    ExpiresByType application/x-font-woff "access plus 1 month"
+    ExpiresByType application/font-woff2 "access plus 1 month"
+    ExpiresByType application/x-font-ttf "access plus 1 month"
+    ExpiresByType font/opentype "access plus 1 month"
+</IfModule>
+ 
+<ifmodule mod_headers.c>
+<filesmatch "(gif|ico|jpeg|jpe|jpg|svg|png|css|js|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</filesmatch>
+</ifmodule> 
