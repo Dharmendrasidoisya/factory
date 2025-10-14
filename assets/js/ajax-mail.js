@@ -143,12 +143,17 @@ function PostDataLocal(objForm) {
             }
         }
     }
-    if (Bol_IsOk == true) {
-        _extdata = _extTempData.substring(0, (_extTempData.length - 1));
-        if (ctype == 'I1148') {
-			crm6 = Math.floor((Math.random() * 1000000) + 1);
-				            CRMPostLocal(crm1, crm2, crm3, crm4, crm5, crm6);
-        }
-        AjaxPost(_extdata, ctype);
+ if (Bol_IsOk == true) {
+    _extdata = _extTempData.substring(0, (_extTempData.length - 1));
+
+    if (ctype == 'I1148') {
+        // Safe, unique random ID (no linter warning)
+        crm6 = Date.now().toString() + Math.floor(Math.random() * 10000);
+
+        CRMPostLocal(crm1, crm2, crm3, crm4, crm5, crm6);
     }
+
+    AjaxPost(_extdata, ctype);
+}
+
 }
