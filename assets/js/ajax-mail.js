@@ -46,29 +46,37 @@ $(function() {
 	});
 
 });
-function CRMPostLocal(crm1, crm2, crm3, crm4, crm5,crm6) {
-    crm6 = "T"+ Math.floor((Math.random() * 1000000) + 1);
-    
-	var postD = {'name': crm1, 'email_from': crm2, 'mobile': crm3, 'phone': crm3, 'city': crm4, 'contact_name': crm5, 'QUERY_ID': "T"+crm6};
+function CRMPostLocal(crm1, crm2, crm3, crm4, crm5) {
+    // Generate a pseudo-random QUERY_ID
+    let crm6 = "T" + Math.floor(Math.random() * 1000000 + 1);
+
+    let postD = {
+        name: crm1,
+        email_from: crm2,
+        mobile: crm3,
+        phone: crm3,
+        city: crm4,
+        contact_name: crm5,
+        QUERY_ID: crm6
+    };
+
     $.ajax({
         url: 'https://crm.marutair.com/marutAir/lead/add',
         type: 'POST',
         dataType: 'json',
-        headers: { 'access-control-allow-origin': 'https://marutair.com', 'postman-token': '4dce4696-ce7a-86e4-a6b3-8b0bb1ab3a38','cache-control': 'no-cache','content-type': 'application/json'},
-        data: postD,
-
-        success: function (data) {
+        contentType: 'application/json',
+        data: JSON.stringify(postD),
+        success: function(data) {
             if (data != null) {
                 _ITBObject = data;
-                
             }
-
         },
-        error: function (error) {
-            return ('error: ' + error);
+        error: function(error) {
+            console.error('Error:', error);
         }
     });
 }
+
 
 function PostDataLocal(objForm) {
     var ctype = "";
