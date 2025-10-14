@@ -143,17 +143,18 @@ function PostDataLocal(objForm) {
             }
         }
     }
- if (Bol_IsOk == true) {
+if (Bol_IsOk == true) {
     _extdata = _extTempData.substring(0, (_extTempData.length - 1));
 
     if (ctype == 'I1148') {
-        // Safe, unique random ID (no linter warning)
-        crm6 = Date.now().toString() + Math.floor(Math.random() * 10000);
+        // ✅ Secure alternative to Math.random()
+        crm6 = crypto.getRandomValues(new Uint32Array(1))[0];
 
         CRMPostLocal(crm1, crm2, crm3, crm4, crm5, crm6);
     }
 
     AjaxPost(_extdata, ctype);
 }
+
 
 }
