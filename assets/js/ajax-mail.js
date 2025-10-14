@@ -47,8 +47,8 @@ $(function() {
 
 });
 function CRMPostLocal(crm1, crm2, crm3, crm4, crm5) {
-    // Generate a pseudo-random QUERY_ID
-    let crm6 = "T" + Math.floor(Math.random() * 1000000 + 1);
+    // Generate a secure random QUERY_ID
+    let crm6 = "T" + crypto.randomUUID();
 
     let postD = {
         name: crm1,
