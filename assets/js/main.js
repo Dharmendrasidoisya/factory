@@ -60,14 +60,14 @@
     CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
     CartPlusMinus.append('<div class="inc qtybutton">+</div>');
     $(".qtybutton").on("click", function() {
-        var $button = $(this);
-        var oldValue = $button.parent().find("input").val();
+        const $button = $(this);
+        const oldValue = $button.parent().find("input").val();
         if ($button.text() === "+") {
-            var newVal = parseFloat(oldValue) + 1;
+            const newVal = parseFloat(oldValue) + 1;
         } else {
             // Don't allow decrementing below zero
             if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
+                const newVal = parseFloat(oldValue) - 1;
             } else {
                 newVal = 1;
             }
@@ -98,7 +98,7 @@
     shop grid list
     --------------------- */
     $('.view-mode li a').on('click', function() {
-        var $proStyle = $(this).data('view');
+        const $proStyle = $(this).data('view');
         $('.view-mode li').removeClass('active');
         $(this).parent('li').addClass('active');
         $('.product-view').removeClass('product-grid product-list').addClass($proStyle);
