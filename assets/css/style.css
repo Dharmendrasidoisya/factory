@@ -1,29 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
------------------------------------------------------------------------------------
-    
-    [Table of contents] 
-	
-    1. Template default css
-    2. Home page 1
-    3. Home page 2
-    4. About us
-    5. Shop page
-    6. Product details
-    7. Cart page
-    8. Checkout page
-    9. My account
-    10. Login register page
-    11. Contact page
-    12. Blog page
-    13. Blog details
-    
------------------------------------------------------------------------------------*/
-
-
-/*------------------------
-    1. Template default css
---------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Pacifico');
 body {
@@ -132,7 +107,7 @@ h6 {
 ul {
     margin: 0px;
     padding: 0px;
-	    /* margin-right: -683px; */
+	
 }
 
 p {
@@ -663,7 +638,7 @@ textarea:focus {
 }
 .pt-39 {
     padding-top: 15px;
-    /*padding-top: 1px*/
+   
 }
 .pt-40 {
     padding-top: 40px
@@ -1233,9 +1208,7 @@ textarea:focus {
     padding: 310px 0
 }
 
-/***************************
-    Page section margin 
-****************************/
+
 
 .mtb-0 {
     margin: 0
@@ -1292,11 +1265,7 @@ textarea:focus {
     margin: 290px 0;
 }
 
-/*************************************
-    Background variation set 
- **************************************/
 
-/*colored background*/
 .white-bg {
     background: #fff;
 }
@@ -1464,11 +1433,7 @@ textarea:focus {
     height: 100vh;
 }
 
-/*------------------------
-    2. Home page 1
---------------------------*/
 
-/* header top */
 .welcome-area > p {
     color: #fff;
     margin: 14px 0 0;
@@ -1557,7 +1522,7 @@ textarea:focus {
 /* header bottom */
 .stick .logo.pt-39 {
     padding-top: 15px;
-    /*padding-top: 6px;*/
+ 
 }
 .main-menu li {
     display: inline-block;
@@ -1570,7 +1535,7 @@ textarea:focus {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    /*line-height: 65px;*/
+ 
     line-height: 90px;
     text-transform: uppercase;
 	padding: 0px;
@@ -1911,7 +1876,6 @@ button.icon-cart span.count-style {
     font-size: 15px;
 }
 
-/* slider */
 .slider-content h3 {
     color: #000101;
     font-family: "Pacifico", cursive;
@@ -1945,7 +1909,7 @@ button.icon-cart span.count-style {
     margin-left: 17px;
 }
 
-/* Default Slider Animations */
+
 .owl-item .slider-content * {
     -webkit-animation-duration: 1.3s;
     animation-duration: 1.3s;
@@ -2033,7 +1997,7 @@ button.icon-cart span.count-style {
 
 /* food-category */
 .single-food-content {
-    /*margin: -36px 0 0;*/
+
     position: relative;
     bottom: 30px;
     left: 0;
@@ -2047,22 +2011,22 @@ button.icon-cart span.count-style {
     box-shadow: 0 0.3px 7px rgba(0, 0, 0, 0.2);
     color: #000101;
     display: inline-block;
-    /* font-family: "Pacifico", cursive; */
+  
     font-size: 15px;
     font-weight: 400;
     line-height: 1;
 }
 .cate-padding-1 .single-food-content > h3 {
     padding: 15px 74px 14px;
-    /*padding: 15px 30px 15px; */
+
 }
 .cate-padding-2 .single-food-content > h3 {
    padding: 15px 74px 14px;
-   /*padding: 15px 30px 15px;*/
+  
 }
 .cate-padding-3 .single-food-content > h3 a{
     padding: 20px 74px 19px;
-    /*padding: 15px 30px 15px;*/
+  
 	display: inline-block;
 	
 	
@@ -2097,7 +2061,7 @@ button.icon-cart span.count-style {
     max-width: 300px;
 }
 
-/* product area */
+
 .section-title > h2 {
     color: #000101;
     font-size: 36px;
@@ -2205,7 +2169,7 @@ button.icon-cart span.count-style {
     color: #5A85BF;
 }
 
-/* deal area */
+
 .deal-img img {
     width: 100%;
 }
@@ -2265,7 +2229,7 @@ button.icon-cart span.count-style {
     transition: all 0.4s ease 0s;
     width: 100%;
 }
-/* testimonial-area */
+
 .slick-list {
     display: block;
     margin: 0;
@@ -2327,7 +2291,7 @@ button.icon-cart span.count-style {
     left: 49%;
     position: absolute;
 }
-/* service-area */
+
 .service-content {
     padding: 30px 28px 25px;
 }
@@ -2356,7 +2320,6 @@ button.icon-cart span.count-style {
     background-color: #f7d8f9;
 }
 
-/* blog-area */
 .blog-meta li {
     color: #575757;
     display: inline-block;
@@ -2431,11 +2394,11 @@ button.icon-cart span.count-style {
     top: 0;
 }
 
-/* footer area */
+
 .footer-info-wrapper > p {
     color: #6c6c6c;
     font-size: 14px;
-    /* margin: 22px 0 21px; */
+ 
 }
 .single-address-info {
     display: flex;
@@ -2574,7 +2537,6 @@ h4.footer-title {
     width: 100%;
 }
 
-/* Modal style */
 .modal-body {
     display: flex;
     justify-content: space-between;
@@ -2777,11 +2739,7 @@ input.cart-plus-minus-box {
     display: none;
 }
 
-/*------------------------
-    3. Home page 2
---------------------------*/
 
-/* slider index-2 */
 .slider-content.slider-content-white h3 {
     color: #fff;
 }
@@ -2796,7 +2754,7 @@ input.cart-plus-minus-box {
     background-color: #5A85BF;
     color: #fff;
 }
-/* food-category index-2 */
+
 .single-food-category-2 {
     padding: 0 35px;
     position: relative;
@@ -2835,7 +2793,7 @@ input.cart-plus-minus-box {
 .single-food-category-2:hover h3 {
     color: #fff;
 }
-/* testimonial index-2 */
+
 .testimonial-white-color .sin-testiText > p {
     color: #000;
 }
@@ -2846,7 +2804,7 @@ input.cart-plus-minus-box {
 .testimonial-white-color .sin-testiImage.slick-slide > h5 {
     color: #4d4d4d;
 }
-/* deal index-2 */
+
 .section-title.section-title-white > h4,
 .section-title.section-title-white > h2 {
     color: #fff;
@@ -2875,11 +2833,7 @@ input.cart-plus-minus-box {
   padding: 0 100px 0 0;
 }
 
-/*------------------------
-    4. About us
---------------------------*/
 
-/* breadcrumb style */
 .breadcrumb-content > h2 {
     color: #fff;
     font-size: 35px;
@@ -2919,7 +2873,7 @@ input.cart-plus-minus-box {
     display: none;
 }
 
-/* about-us area */
+
 
 .about-us-img>img {
     width: 100%;
@@ -2964,7 +2918,7 @@ input.cart-plus-minus-box {
     top: -1px;
 }
 
-/* count area */
+
 
 .single-count-wrapper {
     display: flex;
@@ -2982,7 +2936,7 @@ input.cart-plus-minus-box {
     font-weight: 600;
 }
 
-/* team area */
+
 
 .team-wrapper {
     background-color: #f9f9f9;
@@ -3054,9 +3008,6 @@ input.cart-plus-minus-box {
     transition-delay: 0.4s;
 }
 
-/*------------------------
-    5. Shop page
---------------------------*/
 
 .shop-sidebar-title {
     color: #242424;
@@ -3422,9 +3373,7 @@ input.cart-plus-minus-box {
     color: #fff;
 }
 
-/*------------------------
-    6. Product details
---------------------------*/
+
 
 .product-details-content>h2 {
     color: #585858;
@@ -3668,9 +3617,6 @@ input.cart-plus-minus-box {
     padding-right: 1px;
 }
 
-/*------------------------
-    7. Cart page
---------------------------*/
 
 .page-title {
     font-size: 22px;
@@ -3937,9 +3883,6 @@ button.cart-btn-2:hover,
     background-color: #242424;
 }
 
-/*------------------------
-    8. Checkout page
---------------------------*/
 
 h5.panel-title {
     background-color: #fff;
@@ -4283,9 +4226,7 @@ h5.panel-title span {
     color: #5A85BF;
 }
 
-/*------------------------
-    9. My account
---------------------------*/
+
 
 .account-info-wrapper>h4 {
     font-size: 18px;
@@ -4343,9 +4284,7 @@ h5.panel-title span {
     background-color: #5A85BF;
 }
 
-/*------------------------
-    10. Login register page
---------------------------*/
+
 
 .login-form-container {
     background: transparent none repeat scroll 0 0;
@@ -4462,9 +4401,7 @@ h5.panel-title span {
     color: #fff;
 }
 
-/*------------------------
-    11. Contact page
---------------------------*/
+
 
 #map {
     height: 500px;
@@ -4557,9 +4494,7 @@ h5.panel-title span {
     margin: 0px 0 20px;
 }
 
-/*------------------------
-    12. Blog page
---------------------------*/
+
 
 .single-recent-post {
     display: flex;
@@ -4587,9 +4522,7 @@ h5.panel-title span {
     width: 100%;
 }
 
-/*------------------------
-    13. Blog details
---------------------------*/
+
 
 .dec-img>img {
     width: 100%;
@@ -4761,7 +4694,6 @@ blockquote.importent-title {
 }
 
 
-/* whatsapp icon */
 .float{
 	position:fixed;
 	width: 40px;
@@ -4778,13 +4710,7 @@ blockquote.importent-title {
     line-height: 40px;
 }
 
-/*.my-float{
-	margin-top:8px;
-}*/
 
-/* whatsapp icon end */
-
-/* pop up buttone start */
 
 .loginmodal-container {
     padding: 30px;
@@ -4830,7 +4756,7 @@ blockquote.importent-title {
     font-size: 1.8em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    /*font-family: roboto;*/
+    
     background: #5A85BF;
     color: #fff;
     padding: 10px;
@@ -4863,7 +4789,7 @@ blockquote.importent-title {
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
 }
-/* pop up end */
+
 .fa-file-pdf-o{
     padding-right: 5px;
 }
