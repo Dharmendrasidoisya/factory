@@ -15,7 +15,7 @@
     /*--
 	Header Search Toggle
     -----------------------------------*/
-    var searchToggle = $('.search-toggle');
+    const searchToggle = $('.search-toggle');
     searchToggle.on('click', function(){
         if($(this).hasClass('open')){
            $(this).removeClass('open');
@@ -56,7 +56,7 @@
     /*----------------------------
     	Cart Plus Minus Button
     ------------------------------ */
-    var CartPlusMinus = $('.cart-plus-minus');
+    const CartPlusMinus = $('.cart-plus-minus');
     CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
     CartPlusMinus.append('<div class="inc qtybutton">+</div>');
     $(".qtybutton").on("click", function() {
@@ -78,8 +78,8 @@
     /*---------------------
     price slider
     --------------------- */
-    var sliderrange = $('#slider-range');
-    var amountprice = $('#amount');
+    const sliderrange = $('#slider-range');
+    const amountprice = $('#amount');
     $(function() {
         sliderrange.slider({
             range: true,
@@ -175,11 +175,11 @@
     /*--
     Menu Stick
     -----------------------------------*/
-    var header = $('.transparent-bar');
-    var win = $(window);
+    const header = $('.transparent-bar');
+    const win = $(window);
     
     win.on('scroll', function() {
-        var scroll = win.scrollTop();
+        const scroll = win.scrollTop();
         if (scroll < 200) {
             header.removeClass('stick');
         } else {
@@ -202,7 +202,7 @@
         Countdown
     --------------------- */
     $('[data-countdown]').each(function() {
-        var $this = $(this),
+        const $this = $(this),
             finalDate = $(this).data('countdown');
         $this.countdown(finalDate, function(event) {
             $this.html(event.strftime('<span class="cdown day">%-D <p>Days</p></span> <span class="cdown hour">%-H <p>Hour</p></span> <span class="cdown minutes">%M <p>Min</p></span class="cdown second"> <span>%S <p>Sec</p></span>'));
