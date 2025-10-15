@@ -99,7 +99,7 @@ h6 {
     color: #444444;
     margin-top: 0px;
     font-style: normal;
-    font-weight: 400;
+
 }
 
 h1 a,
@@ -2955,8 +2955,7 @@ input.cart-plus-minus-box {
 }
 .about-us-list ul li::before {
     color: #454545;
-    content: "*";
-    /*content: "";*/
+    content: "\e8a4"; /* Replace with proper Themify icon code */
     display: inline-block;
     font-family: "themify";
     font-size: 17px;
