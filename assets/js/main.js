@@ -59,11 +59,11 @@
     const CartPlusMinus = $('.cart-plus-minus');
     CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
     CartPlusMinus.append('<div class="inc qtybutton">+</div>');
- $(".qtybutton").on("click", function() {
+$(".qtybutton").on("click", function() {
     const $button = $(this);
     const input = $button.parent().find("input");
-    const oldValue = parseFloat(input.val());
-    let newVal; // ✅ Declare once
+    const oldValue = Number.parseFloat(input.val()); // ✅ fixed
+    let newVal;
 
     if ($button.text() === "+") {
         newVal = oldValue + 1;
@@ -74,6 +74,7 @@
 
     input.val(newVal);
 });
+
 
     
     /*---------------------
