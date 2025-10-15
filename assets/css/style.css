@@ -4836,7 +4836,8 @@ blockquote.importent-title {
     color: #fff;
     padding: 10px;
 }
-.loginmodal-container input[type="text"], input[type="password"] {
+.loginmodal-container input[type="text"],
+.loginmodal-container input[type="password"] {
     height: 35px;
     font-size: 16px;
     width: 100%;
@@ -4844,10 +4845,7 @@ blockquote.importent-title {
     -webkit-appearance: none;
     background: #fff;
     border: 1px solid #d9d9d9;
-    border-top-color: rgb(217, 217, 217);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top: 1px solid #c0c0c0;
+    border-top: 1px solid #c0c0c0; /* Keep only this shorthand */
     border-radius: 2px;
     padding: 0 8px;
     box-sizing: border-box;
@@ -4855,6 +4853,7 @@ blockquote.importent-title {
     color: #9c9c9c;
     font-family: 'Montserrat', sans-serif;
 }
+
 .loginmodal-container .txtar {
     padding: 8px;
     width: 100%;
